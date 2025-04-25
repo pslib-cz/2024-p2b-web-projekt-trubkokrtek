@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pslib.github.io/2024-p2b-web-projekt-trubkokrtek/",
+  "homepage": "https://pslib-cz.github.io/2024-p2b-web-projekt-trubkokrtek/",
   "scripts": {
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d dist",
