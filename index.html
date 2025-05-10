@@ -3,64 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Name | Home</title>
+    <title>Home | Name</title>
   </head>
   <body>
-    <header>
-      <a href="#">Home</a>
-      <a href="#">Sestavy</a>
-      <a href="#">Kontakt</a>
+    <header class="header">
+      <nav>
+        <menu class="header__menu">
+          <li><a class="header__menu--item" href="#">Logo</a></li>
+          <li><a class="header__menu--item" href="sestavy.html">Sestavy</a></li>
+          <li><a class="header__menu--item" href="kontakt.html">Kontakt</a></li>
+        </menu>
+      </nav>
     </header>
-    <main>
-      <div>
-        <p>Vítej</p>
+    <main class="main">
+      <div class="main__description">
+        <h1>Vítej</h1>
         <p>Potřebujete nový výkonný počítač na míru? Nebo váš současný stroj potřebuje odborný zásah? Jsme tu pro vás! Nabízíme také rychlý a spolehlivý servis, diagnostiku, upgrade i čištění komponent. A to nejen pro stolní počítače, ale i pro mobily, tablety a notebooky.</p>
       </div>
-      <div>
-        <p>Nejprodávanější</p>
-        <div><!--Swipper gallery--></div>
+      <div class="main__gallery">
+        <p class="main__header">Nejprodávanější</p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/src/assets/pc1.jpg" alt="PC 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/src/assets/pc2.jpg" alt="PC 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/src/assets/pc3.jpg" alt="PC 3" />
+            </div>  
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
-      <div>
-        <p>Služby</p>
-        <div>
-          <p>Prodej hotových PC</p>
-          <div>
+      <div class="main__tiles">
+        <p class="main__header">Služby</p>
+        <div class="tile">
+          <p class="tile__header">Prodej hotových PC</p>
+          <div class="tile__description">
             <p>Sestavy pro každou příležitost. Vyber si, která ti sedne a začni hrát.</p>
-            <a href="#">Prohlížet</a>
+            <a href="sestavy.html" class="tile__button">Prohlížet</a>
           </div>
         </div>
-        <div>
-          <p>Stavba PC na míru</p>
-          <div>
+        <div class="tile">
+          <p class="tile__header">Stavba PC na míru</p>
+          <div class="tile__description">
             <p>Chceš něco speciálního nebo ti nesedla žádná sestava. Napiš mi a postavím něco přímo pro tebe.</p>
-            <a href="#">Kontaktuj</a>
+            <a class="tile__button" href="kontakt.html">Kontaktuj</a>
           </div>
         </div>
-        <div>
-          <p>Servis a upgrade PC</p>
-          <div>
+        <div class="tile">
+          <p class="tile__header">Servis a upgrade PC</p>
+          <div class="tile__description">
             <p>Rozbil se ti počítač, anebo už nezvládá hrát nejnovější hry. Pošli ho ke mně a já se o něj postarám.</p>
-            <a href="#">Kontaktuj</a>
+            <a href="kontakt.html" class="tile__button">Kontaktuj</a>
           </div>
         </div>
-        <div>
-          <p>Nápověda k stavbě PC</p>
-          <div>
+        <div class="tile">
+          <p class="tile__header">Nápověda k stavbě PC</p>
+          <div class="tile__description">
             <p>Chceš si postavit vlastní PC, ale nevíš jaké komponenty vybrat, nebo co je potřeba. Napiš mi zprávu a já ti poradím.</p>
-            <a href="#">Kontaktuj</a>
+            <a href="kontakt.html" class="tile__button">Kontaktuj</a>
           </div>
         </div>
-        <div>
-          <p>Servis notebooků a mobilních zařízení</p>
-          <div>
-            <p>SRozbil se ti notebook, mobil, nebo tablet. Pošli ho ke mně a já se podívám, co se dá dělat.</p>
-            <a href="#">Kontaktuj</a>
+        <div class="tile">
+          <p class="tile__header">Servis notebooků a mobilních zařízení</p>
+          <div class="tile__description">
+            <p>Rozbil se ti notebook, mobil, nebo tablet. Pošli ho ke mně a já se podívám, co se dá dělat.</p>
+            <a href="kontakt.html" class="tile__button">Kontaktuj</a>
           </div>
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <p>&copy;2025 Trubkokrtek</p>
     </footer>
     <script type="module" src="/src/main.js"></script>
