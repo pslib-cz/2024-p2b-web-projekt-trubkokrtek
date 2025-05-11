@@ -1,0 +1,17 @@
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .brand { font-family: 'Segoe UI', sans-serif; font-weight: bold; font-size: 32px; fill: #ffffff; }
+    .byte { fill: #00aaff; }
+    .icon { fill: #00aaff; }
+  </style>
+  
+  <!-- Wrench icon (simplified) -->
+  <g class="icon" transform="translate(10, 30)">
+    <path d="M20 0a10 10 0 0 0-8 16l-8 8a4 4 0 0 0 6 6l8-8a10 10 0 1 0 2-22z"/>
+  </g>
+
+  <!-- Text: ByteRepair -->
+  <text x="60" y="60" class="brand">
+    <tspan class="byte">Byte</tspan>Repair
+  </text>
+</svg>
