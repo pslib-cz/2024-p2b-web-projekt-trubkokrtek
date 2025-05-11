@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">¨
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="stylesheet" href="/src/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name | Kontakt</title>
+    <title>Kontakt | ByteRepair</title>
 </head>
 <body>
-    <header>
-        <a href="#">Home</a>
-        <a href="#">Sestavy</a>
-        <a href="#">Kontakt</a>
+    <header class="header">
+        <nav>
+            <menu class="header__menu">
+                <li><a class="header__menu--item" href="index.html"><img src="/logo.svg" alt="logo" width="150" height="50"></a></li>
+                <li><a class="header__menu--item" href="sestavy.html">Sestavy</a></li>
+                <li><a class="header__menu--item active" href="#">Kontakt</a></li>
+            </menu>
+        </nav>
     </header>
-    <main>
-        <div>
-            <p>Kontakt</p>
+    <main class="main">
+        <div class="main__description">
+            <h1>Kontakt</h1>
             <p>Stavíš počítač a nevíš si rady a nebo vůbec nevíš jaké komponenty si vybrat. Nebo se ti rozbil PC / mobil / notebook a neumíš ho spravit. Pošli mi zářízení na adresu zde uvedenou nebo mi napiš s čím chceš poradit a já ti odpovím.</p>
         </div>
-        <div>
-            <p>Kontaktní informace</p>
-            <ul>
+        <div class="main__section">
+            <p class="main__header">Kontaktní informace</p>
+            <ul class="main__contact">
                 <li>Pan</li>
                 <li>Dominik Štěpánek</li>
                 <li>Masarykova 3</li>
@@ -29,25 +34,26 @@
                 <li>Telefon: +420 123 456 789</li>
             </ul>
         </div>
-        <div>
-            <p>Kontaktní formulář</p>
-            <form>
-                <select placeholder="Co potřebuješ?" required>
-                    <option value="custom">Chci custom PC</option>
-                    <option value="upgrade">Chci nechat opravit/upgradovat PC</option>
-                    <option value="hints">Potřebuji poradit</option>
-                    <option value="repair">Chci spravit telefon/notebook</option>
-                    <option value="other">Jiné</option>
+        <div class="main__section">
+            <p class="main__header">Kontaktní formulář</p>
+            <form class="main__form">
+                <select placeholder="Co potřebuješ?" required class="form__field">
+                    <option value="custom" class="form__option">Chci custom PC</option>
+                    <option value="upgrade" class="form__option">Chci nechat opravit/upgradovat PC</option>
+                    <option value="hints" class="form__option">Potřebuji poradit</option>
+                    <option value="repair" class="form__option">Chci spravit telefon/notebook</option>
+                    <option value="other" class="form__option">Jiné</option>
                 </select>
-                <input type="text" placeholder="Jméno" required>
-                <input type="text" placeholder="Email" required>
-                <input type="text" placeholder="Zpráva" required>
-                <button type="submit">Odeslat</button>
+                <input type="text" placeholder="Jméno" required class="form__field">
+                <input type="text" placeholder="Email" required class="form__field">
+                <input type="text" placeholder="Zpráva" required class="form__field form__field--long">
+                <button type="submit" class="form__field form__button">Odeslat</button>
             </form>
         </div>
     </main>
-    <footer>
-        <p>&copy;2025 Trubkokrtek</p>
+    <footer class="footer">
+        <p>&copy;2025 ByteRepair</p>
     </footer>
+    <script src="/src/contact.js"></script>
 </body>
 </html>

@@ -2,16 +2,16 @@
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="stylesheet" href="/src/styles/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Name</title>
+    <title>Home | ByteRepair</title>
   </head>
   <body>
     <header class="header">
       <nav>
         <menu class="header__menu">
-          <li><a class="header__menu--item" href="#">Logo</a></li>
+          <li><a class="header__menu--logo active" href="#"><img src="/logo.svg" alt="logo" width="150" height="50"></a></li>
           <li><a class="header__menu--item" href="sestavy.html">Sestavy</a></li>
           <li><a class="header__menu--item" href="kontakt.html">Kontakt</a></li>
         </menu>
@@ -22,18 +22,18 @@
         <h1>Vítej</h1>
         <p>Potřebujete nový výkonný počítač na míru? Nebo váš současný stroj potřebuje odborný zásah? Jsme tu pro vás! Nabízíme také rychlý a spolehlivý servis, diagnostiku, upgrade i čištění komponent. A to nejen pro stolní počítače, ale i pro mobily, tablety a notebooky.</p>
       </div>
-      <div class="main__gallery">
+      <div class="main__section">
         <p class="main__header">Nejprodávanější</p>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="/src/assets/pc1.jpg" alt="PC 1" />
+              <img src="/img/pc1.webp" alt="PC 1" class="img"/>
             </div>
             <div class="swiper-slide">
-              <img src="/src/assets/pc2.jpg" alt="PC 2" />
+              <img src="/img/pc2.webp" alt="PC 2" class="img"/>
             </div>
             <div class="swiper-slide">
-              <img src="/src/assets/pc3.jpg" alt="PC 3" />
+              <img src="/img/pc3.webp" alt="PC 3" class="img"/>
             </div>  
           </div>
           <div class="swiper-pagination"></div>
@@ -41,7 +41,7 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="main__tiles">
+      <div class="main__section">
         <p class="main__header">Služby</p>
         <div class="tile">
           <p class="tile__header">Prodej hotových PC</p>
@@ -81,7 +81,7 @@
       </div>
     </main>
     <footer class="footer">
-      <p>&copy;2025 Trubkokrtek</p>
+      <p>&copy;2025 ByteRepair</p>
     </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
