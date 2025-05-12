@@ -8,81 +8,83 @@
     <title>Home | ByteRepair</title>
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <menu class="header__menu">
-          <li><a class="header__menu--logo active" href="#"><img src="/logo.svg" alt="logo" width="150" height="50"></a></li>
-          <li><a class="header__menu--item" href="sestavy.html">Sestavy</a></li>
-          <li><a class="header__menu--item" href="kontakt.html">Kontakt</a></li>
-        </menu>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="main__description">
-        <h1>Vítej</h1>
-        <p>Potřebujete nový výkonný počítač na míru? Nebo váš současný stroj potřebuje odborný zásah? Jsme tu pro vás! Nabízíme také rychlý a spolehlivý servis, diagnostiku, upgrade i čištění komponent. A to nejen pro stolní počítače, ale i pro mobily, tablety a notebooky.</p>
-      </div>
-      <div class="main__section">
-        <p class="main__header">Nejprodávanější</p>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/img/pc1.webp" alt="PC 1" class="img"/>
+    <div class="wrapper">
+      <header class="header">
+        <nav>
+          <menu class="header__menu">
+            <li><a class="header__menu--logo active" href="#"><img src="/logo.svg" alt="logo" width="150" height="50"></a></li>
+            <li><a class="header__menu--item" href="sestavy.html">Sestavy</a></li>
+            <li><a class="header__menu--item" href="kontakt.html">Kontakt</a></li>
+          </menu>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="main__description">
+          <h1>Vítej</h1>
+          <p>Potřebujete nový výkonný počítač na míru? Nebo váš současný stroj potřebuje odborný zásah? Jsme tu pro vás! Nabízíme také rychlý a spolehlivý servis, diagnostiku, upgrade i čištění komponent. A to nejen pro stolní počítače, ale i pro mobily, tablety a notebooky.</p>
+        </div>
+        <div class="main__section">
+          <p class="main__header">Nejprodávanější</p>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/pc1.webp" alt="PC 1" class="img"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/pc2.webp" alt="PC 2" class="img"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/pc3.webp" alt="PC 3" class="img"/>
+              </div>  
             </div>
-            <div class="swiper-slide">
-              <img src="/img/pc2.webp" alt="PC 2" class="img"/>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="main__section">
+          <p class="main__header">Služby</p>
+          <div class="tile">
+            <p class="tile__header">Prodej hotových PC</p>
+            <div class="tile__description">
+              <p>Sestavy pro každou příležitost. Vyber si, která ti sedne a začni hrát.</p>
+              <a href="sestavy.html" class="tile__button">Prohlížet</a>
             </div>
-            <div class="swiper-slide">
-              <img src="/img/pc3.webp" alt="PC 3" class="img"/>
-            </div>  
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-      <div class="main__section">
-        <p class="main__header">Služby</p>
-        <div class="tile">
-          <p class="tile__header">Prodej hotových PC</p>
-          <div class="tile__description">
-            <p>Sestavy pro každou příležitost. Vyber si, která ti sedne a začni hrát.</p>
-            <a href="sestavy.html" class="tile__button">Prohlížet</a>
+          <div class="tile">
+            <p class="tile__header">Stavba PC na míru</p>
+            <div class="tile__description">
+              <p>Chceš něco speciálního nebo ti nesedla žádná sestava. Napiš mi a postavím něco přímo pro tebe.</p>
+              <a class="tile__button" href="kontakt.html">Kontaktuj</a>
+            </div>
           </div>
-        </div>
-        <div class="tile">
-          <p class="tile__header">Stavba PC na míru</p>
-          <div class="tile__description">
-            <p>Chceš něco speciálního nebo ti nesedla žádná sestava. Napiš mi a postavím něco přímo pro tebe.</p>
-            <a class="tile__button" href="kontakt.html">Kontaktuj</a>
+          <div class="tile">
+            <p class="tile__header">Servis a upgrade PC</p>
+            <div class="tile__description">
+              <p>Rozbil se ti počítač, anebo už nezvládá hrát nejnovější hry. Pošli ho ke mně a já se o něj postarám.</p>
+              <a href="kontakt.html" class="tile__button">Kontaktuj</a>
+            </div>
           </div>
-        </div>
-        <div class="tile">
-          <p class="tile__header">Servis a upgrade PC</p>
-          <div class="tile__description">
-            <p>Rozbil se ti počítač, anebo už nezvládá hrát nejnovější hry. Pošli ho ke mně a já se o něj postarám.</p>
-            <a href="kontakt.html" class="tile__button">Kontaktuj</a>
+          <div class="tile">
+            <p class="tile__header">Nápověda k stavbě PC</p>
+            <div class="tile__description">
+              <p>Chceš si postavit vlastní PC, ale nevíš jaké komponenty vybrat, nebo co je potřeba. Napiš mi zprávu a já ti poradím.</p>
+              <a href="kontakt.html" class="tile__button">Kontaktuj</a>
+            </div>
+          </div>
+          <div class="tile">
+            <p class="tile__header">Servis notebooků a mobilních zařízení</p>
+            <div class="tile__description">
+              <p>Rozbil se ti notebook, mobil, nebo tablet. Pošli ho ke mně a já se podívám, co se dá dělat.</p>
+              <a href="kontakt.html" class="tile__button">Kontaktuj</a>
+            </div>
           </div>
         </div>
-        <div class="tile">
-          <p class="tile__header">Nápověda k stavbě PC</p>
-          <div class="tile__description">
-            <p>Chceš si postavit vlastní PC, ale nevíš jaké komponenty vybrat, nebo co je potřeba. Napiš mi zprávu a já ti poradím.</p>
-            <a href="kontakt.html" class="tile__button">Kontaktuj</a>
-          </div>
-        </div>
-        <div class="tile">
-          <p class="tile__header">Servis notebooků a mobilních zařízení</p>
-          <div class="tile__description">
-            <p>Rozbil se ti notebook, mobil, nebo tablet. Pošli ho ke mně a já se podívám, co se dá dělat.</p>
-            <a href="kontakt.html" class="tile__button">Kontaktuj</a>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <p>&copy;2025 ByteRepair</p>
-    </footer>
-    <script type="module" src="/src/main.js"></script>
+      </main>
+      <footer class="footer">
+        <p>&copy;2025 ByteRepair</p>
+      </footer>
+      <script type="module" src="/src/main.js"></script>
+    </div>
   </body>
 </html>

@@ -25,6 +25,10 @@ body{
     background-color: var(--black);
     color: var(--white);
 }
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
 .img{
     max-width: 100%;
     height: auto;
@@ -59,7 +63,7 @@ body{
 .header__menu--item.active::after {
     content: "";
     position: absolute;
-    bottom: -2em;
+    bottom: calc(-2em - 2px);
     left: calc(50% - 1em);
     rotate: 180deg;
     border-left: 1em solid transparent;
@@ -110,6 +114,12 @@ body{
     border: none;
     color: var(--white);
 }
+.form__button{
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em 0;
+    border: none;
+}
 .form__field--long{
     min-height: 5em;
 }
@@ -132,6 +142,7 @@ body{
     padding: 0.5em 1em;
     text-decoration: none;
     align-self: flex-end;
+    border: none;
 }
 .tile__description {
     display: flex;
@@ -141,4 +152,5 @@ body{
     background: linear-gradient(90deg, var(--black), var(--primary-color));
     padding: 1em;
     text-align: center;
+    justify-self: flex-end;
 }
