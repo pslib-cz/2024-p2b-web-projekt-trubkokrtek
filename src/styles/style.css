@@ -26,6 +26,7 @@ body{
     color: var(--white);
 }
 .wrapper{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -152,5 +153,50 @@ body{
     background: linear-gradient(90deg, var(--black), var(--primary-color));
     padding: 1em;
     text-align: center;
-    justify-self: flex-end;
+    margin-top: auto;
+}
+@media screen and (min-width: 960px) {
+    .header{
+        position: static;
+    }
+    .main__description{
+        margin: 0 auto;
+        max-width: 75%;
+    }
+    .main__section{
+        margin: 0 auto;
+        max-width: 75%;
+    }
+    .tile{
+        margin: .5em;
+    }
+    .main__tiles{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(10em, 1fr));
+    }
+    .shop__tiles{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(20em, 1fr));
+    }
+    .main__form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1em;
+    }
+    .form__field{
+        margin: .5em;
+    }
+    .form__field--long{
+        grid-column: 2 / -1;
+        grid-row: 1 / -2;
+    }
+    .form__button{
+        grid-column: 1 / -1;
+        grid-row: 4 / -1;
+    }
 }
