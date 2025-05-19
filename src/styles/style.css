@@ -33,6 +33,7 @@ body{
 .img{
     max-width: 100%;
     height: auto;
+    border-radius: .5em;
 }
 .header{
     background: linear-gradient(90deg, var(--primary-color), var(--black));
